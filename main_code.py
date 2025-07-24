@@ -66,7 +66,7 @@ def recommend(themes,df,top_n=6):
   return df.iloc[predict][["name","theme"]]
 
 if __name__ == "__main__":
-    movie_name=input("Film ismi giriniz: ")
+    movie_name=input("Film ismi giriniz: ").lower()
 
     movie_themes=get_themes(movie_name)
 
